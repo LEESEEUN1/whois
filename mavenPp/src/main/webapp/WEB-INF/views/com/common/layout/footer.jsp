@@ -30,7 +30,6 @@
 		</div>
 	</div>
 </div>
-<div class="layerDim">&nbsp;</div>
 
 
 <script type="text/javascript">
