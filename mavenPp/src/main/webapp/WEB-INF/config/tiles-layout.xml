@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- 기본템플릿 기본템플릿에서 빼야 하는 영역은 _blank.jsp로 비워서 사용 한다. -->
+    <definition name="defaultLayout" 	template="/WEB-INF/views/com/common/layout/template/defaultLayout.jsp">
+        <put-attribute name="common" 	value="/WEB-INF/views/com/common/layout/common.jsp"/>
+        <put-attribute name="cssput" 	value="/WEB-INF/views/com/common/layout/cssput/mainCss.jsp"/>
+        <put-attribute name="header" 	value="/WEB-INF/views/com/common/layout/header.jsp"/>
+        <put-attribute name="body" 		value=""/>
+        <put-attribute name="footer" 	value="/WEB-INF/views/com/common/layout/footer.jsp"/>
+    </definition>
+    
+	
+ 	<!--  실제 컨트롤 --> 
+    <definition name="main/*" extends="defaultLayout">
+  		<put-attribute name="body" 	value="/WEB-INF/views/com/main.jsp"/>
+    </definition>
+    
+
+</tiles-definitions>
